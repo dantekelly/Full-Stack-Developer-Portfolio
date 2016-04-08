@@ -1,31 +1,3 @@
-//$(document).ready(function() {
-//  $(".html5").hover(function() {
-//    alert('Triggered');
-//  });
-//});
-
-//$(document).ready(function() {
-    //var items = document.querySelectorAll('.array div');
-    //for(var i = 1, l = items.length+1; i < l; i++) {
-
-    //}
-//  }
-/*
-var hover = false;
-var element = [];
-  $(".array div *").hover(function() {
-    if(hover == false) {
-      element.push(this);
-      $(this).addClass('animated');
-    } else {
-      element.pop();
-      $(element[i]).removeClass('animated');
-      $(this).addClass('animated');
-    }
-  });
-//});
-*/
-
 var someonesAnimated = false;
 var animatedPerson = [];
 
@@ -36,7 +8,7 @@ $('.array div *').hover(function() {
     animatedPerson.push($(this).closest('div'));
     $(this).closest('div').addClass('animated');
     $(this).children('p').css('display','block');
-    alert('First come first server!');
+    //alert('First come first server!');
   } else if($(this).closest('div').not(".animated")){
     someonesAnimated = true;
     animatedPerson[0].removeClass('animated');
@@ -45,9 +17,9 @@ $('.array div *').hover(function() {
     animatedPerson.push($(this).closest('div'));
     $(this).closest('div').addClass('animated');
     $(this).children('p').css('display','block');
-    alert('Moving someone else out');
+    //alert('Moving someone else out');
   } else {
-    alert('You are animated! You stay there!');
+    //alert('You are animated! You stay there!');
   }
 }, 2000);
 
