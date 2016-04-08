@@ -27,8 +27,52 @@ header {
   justify-content: center;
 }
 
+/* Nav */
+#hamburger {
+  position:fixed;
+  top: 50px;
+  right: 100px;
+  width: 34px;
+  height: 20px;
+  background-image: url("../media/hamburger.png");
+  cursor: pointer;
+}
+nav {
+  position:relative;
+  right: 57px;
+  top: 30px;
+  background-color: #dfdfdf;
+  width: 150px;
+  height: 160px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.22);
+  display:none;
+  padding: 0;
+  overflow: hidden
+}
+
 nav ul {
-  display: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    width: 100%;
+}
+
+nav ul li a {
+  display: block;
+  margin: 1px auto;
+  text-decoration: none;
+  color: #455971;
+  font-family: BebasNeueRegular;
+  font-size: 1.375rem;
+}
+.divider {
+  background-color: #757575;
+  width: 84px;
+  margin: 0 auto;
+  height: 1px;
 }
 
 header h1 {
@@ -55,10 +99,6 @@ header h2 {
   font-family: Bebas;
   font-size: 2.875rem;
   text-align: center;
-}
-
-#hamburger {
-  background-image: url("../media/hamburger.png");
 }
 
 #skills {
@@ -88,6 +128,10 @@ header h2 {
 
 .array p {
   display: none;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: italic;
 }
 
 .array img {
@@ -110,10 +154,15 @@ header h2 {
 @keyframes hovered {
   0% { }
   10% {transform: translate(0em);}
-  100% {transform: translate(0em) scale(2);}
+  70% {transform: scale(1.75);}
+  100% {transform: translateY(-3em) scale(1.75);}
+}
+
+.array p.2nd {
+  display: block;
 }
 
 .animated {
-  animation: hovered 2s;
+  animation: hovered 1s;
   animation-fill-mode: forwards;
 }
