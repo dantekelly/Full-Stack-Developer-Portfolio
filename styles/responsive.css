@@ -1,8 +1,7 @@
 @media screen and (max-width: 1100px) {
   header h1 {
     margin: 0 0 20px;
-    -webkit-transform: rotate(0deg) translateX(0px);
-            transform: rotate(0deg) translateX(0px); } }
+    transform: rotate(0deg) translateX(0px); } }
 @media screen and (max-width: 800px) {
   header h2 {
     font-size: 4rem; } }
@@ -38,49 +37,39 @@
     display: block; }
 
   .javascript {
-    -webkit-transform: translate(0);
-            transform: translate(0); }
+    transform: translate(0); }
 
   .redhat {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); }
+    transform: rotate(0) translate(0) rotate(0); }
 
   .angular {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); }
+    transform: rotate(0) translate(0) rotate(0); }
 
   .express {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); }
+    transform: rotate(0) translate(0) rotate(0); }
 
   .nodejs {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); }
+    transform: rotate(0) translate(0) rotate(0); }
 
   .python {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); }
+    transform: rotate(0) translate(0) rotate(0); }
 
   .sass {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); }
+    transform: rotate(0) translate(0) rotate(0); }
 
   .mongodb {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); }
+    transform: rotate(0) translate(0) rotate(0); }
 
   .jquery {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); }
+    transform: rotate(0) translate(0) rotate(0); }
 
   .html5 {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); }
+    transform: rotate(0) translate(0) rotate(0); }
 
   .css3 {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); }
+    transform: rotate(0) translate(0) rotate(0); }
 
   .photoshop {
-    -webkit-transform: rotate(0) translate(0) rotate(0);
-            transform: rotate(0) translate(0) rotate(0); } }
+    transform: rotate(0) translate(0) rotate(0); } }
+
+/*# sourceMappingURL=responsive.css.map */
