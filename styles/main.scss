@@ -1,0 +1,294 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~ Fonts ~~~~~~~~~~~~~~~~~~~~~~~~~
+// Declaring local fonts respectively.
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url('../media/Fonts/BebasNeueRegular.otf');
+}
+.Hello {
+
+}
+@font-face {
+  font-family: BebasNeueBold;
+  src: url('../media/Fonts/BebasNeueBold.otf');
+}
+@font-face {
+  font-family: Bebas;
+  src: url('../media/Fonts/BEBAS___.ttf');
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~ Body ~~~~~~~~~~~~~~~~~~~~~~~~~
+// Altering main html font and content-width
+body {
+  font-family: BebasNeue, Arial, sans-serif;
+  width: 100%;
+}
+
+// Header + Header font Settings
+header {
+  height: 500px;
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.2);
+  background: url('../media/header.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    display: block;
+    margin: 0 0 20px;
+    transform: rotate(-3deg) translateX(-350px);
+    text-align: center;
+    font-family: BebasNeueBold, Arial, sans-serif;
+    font-size: 5.625rem;
+    font-weight: 600;
+  }
+  h2 {
+    margin: 0 0;
+    text-align: center;
+    font-family: BebasNeueRegular,A Arial, sans-serif;
+    font-size: 6.25rem;
+    font-weight: 400;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.35);
+  }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~ Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~
+// Navbar
+// May need cleanup
+#hamburger {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  width: 34px;
+  height: 20px;
+  background-image: url("../media/hamburger.png");
+  cursor: pointer;
+}
+nav {
+  position: relative;
+  right: 57px;
+  top: 30px;
+  background-color: #dfdfdf;
+  width: 150px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.22);
+  //border-bottom: 160px solid #dfdfdf;
+  //border-left: 50px solid transparent;
+  //border-right: 50px solid transparent;
+  //height: 0;
+  //width: 150px;
+  //filter: drop-shadow(0 3px 8px rgba(0,0,0,0.22));
+  display: none;
+  padding: 0;
+  overflow: hidden;
+  ul {
+    padding: 0;
+    text-align: center;
+    li {
+      list-style: none;
+      width: 100%;
+      a {
+        display: block;
+        margin: 1px auto;
+        text-decoration: none;
+        color: #455971;
+        font-family: BebasNeueRegular, Arial, sans-serif;
+        font-size: 1.375rem;
+      }
+      .divider {
+        height: 1px;
+        background-color: #455971;
+        width: 60%;
+        text-align: center;
+        margin: 5px auto 10px;
+        box-shadow: 0 0 1px rgba(0,0,0,0.35);
+      }
+    }
+  }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~ Skills ~~~~~~~~~~~~~~~~~~~~~~~~~
+// Skills + Skills font settings
+#skills {
+  background-color: #dfdcda;
+  height: 800px;
+  h1 {
+    padding-top: 40px;
+    font-family: Bebas, Arial, sans-serif;
+    font-size: 2.875rem;
+    text-align: center;
+  }
+}
+
+// Skills array Settings
+.array {
+  position: relative;
+  width: 24em;
+  height: 24em;
+  padding: 2.8em;
+  /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+  border-radius: 50%;
+  margin: 1.75em auto 0;
+  div {
+    /* .array img { display: block; width: 100%; } */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    margin-left: -3.4em;
+    text-align: center;
+    &.high {
+      background-size: 100% 100%;
+      background-image: url('../media/SVG/High.svg');
+    }
+    &.medium {
+      background-size: 100% 100%;
+      background-image: url('../media/SVG/Medium.svg');
+    }
+    &.low {
+      background-size: 100% 100%;
+      background-image: url('../media/SVG/Low.svg');
+    }
+    &.express img {
+      width: 90px * 0.8;
+      padding-top: 25%;
+    }
+    &.photoshop img {
+      width: 90px * 0.75;
+      padding-top: 20%;
+    }
+    &.mongodb img {
+      padding-top: 25%;
+    }
+    &.express p {
+      margin-top: 55px;
+    }
+    &.photoshop p {
+      margin-top: 50px;
+    }
+    &.mongodb p {
+      margin-top: 65px;
+    }
+  }
+  p {
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    margin: 30px auto;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  img {
+    cursor: pointer;
+    max-height: 80px;
+    max-width: 90px;
+    //margin: 0 auto;
+    position: relative;
+    padding-top: 13%;
+    //filter: brightness(10%);
+    //transform: translateY(50%);
+  }
+}
+
+// Skills array management
+.javascript { transform: translate(14em); }
+.redhat { transform: rotate(30deg) translate(14em) rotate(-30deg); }
+.angular { transform: rotate(60deg) translate(14em) rotate(-60deg); }
+.express { transform: rotate(90deg) translate(14em) rotate(-90deg); }
+.nodejs { transform: rotate(120deg) translate(14em) rotate(-120deg); }
+.python { transform: rotate(150deg) translate(14em) rotate(-150deg); }
+.sass { transform: rotate(180deg) translate(14em) rotate(-180deg); }
+.mongodb { transform: rotate(210deg) translate(14em) rotate(-210deg); }
+.jquery { transform: rotate(240deg) translate(14em) rotate(-240deg); }
+.html5 { transform: rotate(270deg) translate(14em) rotate(-270deg); }
+.css3 { transform: rotate(300deg) translate(14em) rotate(-300deg); }
+.photoshop { transform: rotate(330deg) translate(14em) rotate(-330deg); }
+
+@keyframes hovered {
+  10% {transform: translate(0em);}
+  70% {transform: scale(1.75);}
+  100% {transform: translateY(-3em) scale(1.75);}
+}
+
+@keyframes text-reveal {
+  70% {visibility: visible; opacity: 0;}
+  100% {visibility: visible; opacity: 1;}
+}
+
+.array p:nth-of-type(2) {
+  display: block;
+}
+
+.animated {
+  animation: hovered 1s;
+  animation-fill-mode: forwards;
+}
+
+.text-animated {
+  animation: text-reveal 1s;
+  animation-fill-mode: forwards;
+}
+
+.high {
+  background: url('../media/SVG/High.svg');
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~ Portfolio ~~~~~~~~~~~~~~~~~~~~~~
+.jobfinder {
+  padding: 20px;
+  background-color: rgb(9, 21, 33);
+  color: white;
+  text-align: center;
+  img {
+    width: auto;
+    height: 300px;
+  }
+  #projectTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  #projectLanguages {
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  #projectDescription {
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~
+footer {
+  background-color: #17191a;
+  color: #f1ebeb;
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+.icons {
+  text-align: center;
+  a:link, a:visited {
+    color: #f1ebeb;
+    i {
+      font-size: 4em;
+      margin: 0 30px 30px;
+      transition: color 100ms;
+      &:hover {
+        color: rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+      }
+    }
+  }
+}

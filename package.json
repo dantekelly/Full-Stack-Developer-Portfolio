@@ -1,0 +1,33 @@
+{
+  "name": "dantekelly.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio website using Amazon's AWS, RHEL 7, Node, Express, HTML5, CSS3, JS, jQuery, and Webstorm IDE.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.10.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uglifyjs": "^0.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dantekelly/dantekelly.github.io.git"
+  },
+  "author": "Dante Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dantekelly/dantekelly.github.io/issues"
+  },
+  "homepage": "https://github.com/dantekelly/dantekelly.github.io#readme"
+}
