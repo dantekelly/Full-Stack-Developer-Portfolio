@@ -205,7 +205,9 @@ nav {
   background: url("../media/SVG/High.svg"); }
 
 #portfolio img {
-  filter: opacity(80%); }
+  filter: opacity(80%);
+  height: auto;
+  max-width: 90%; }
   #portfolio img:hover {
     filter: opacity(100%); }
 #portfolio h1 {

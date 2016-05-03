@@ -236,6 +236,8 @@ nav {
 #portfolio {
   img {
     filter: opacity(80%);
+    height: auto;
+    max-width: 90%;
     &:hover {
       filter: opacity(100%);
     }

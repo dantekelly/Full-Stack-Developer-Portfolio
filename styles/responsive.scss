@@ -31,14 +31,16 @@
       /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
       border-radius: inherit;
       margin: inherit;
-  }
-
-  .array div {
+    img {
+      cursor: inherit;
+    }
+      div {
         display: inline-block;
         margin: 1em 1.5em;
         position: inherit;
         top: inherit;
         left: inherit;
+      }
   }
 
   #skills {
