@@ -204,6 +204,15 @@ nav {
 .high {
   background: url("../media/SVG/High.svg"); }
 
+#portfolio img {
+  filter: opacity(80%); }
+  #portfolio img:hover {
+    filter: opacity(100%); }
+#portfolio h1 {
+  padding: 40px;
+  font-family: Bebas,Arial,sans-serif;
+  font-size: 2.875rem; }
+
 .jobfinder {
   padding: 20px;
   background-color: #091521;
@@ -212,16 +221,16 @@ nav {
   .jobfinder img {
     width: auto;
     height: 300px; }
-  .jobfinder #projectTitle {
+  .jobfinder .projectTitle {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 10px; }
-  .jobfinder #projectLanguages {
+  .jobfinder .projectLanguages {
     text-align: center;
     font-weight: 300;
     font-size: 18px; }
-  .jobfinder #projectDescription {
+  .jobfinder .projectDescription {
     text-align: center;
     line-height: 1.5; }
 

@@ -4,9 +4,6 @@
   font-family: BebasNeueRegular;
   src: url('../media/Fonts/BebasNeueRegular.otf');
 }
-.Hello {
-
-}
 @font-face {
   font-family: BebasNeueBold;
   src: url('../media/Fonts/BebasNeueBold.otf');
@@ -236,6 +233,23 @@ nav {
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~ Portfolio ~~~~~~~~~~~~~~~~~~~~~~
+#portfolio {
+  img {
+    filter: opacity(80%);
+    &:hover {
+      filter: opacity(100%);
+    }
+  }
+  h1 {
+    padding: 40px;
+    font-family: Bebas,Arial,sans-serif;
+    font-size: 2.875rem;
+  }
+}
+
+
+
+
 .jobfinder {
   padding: 20px;
   background-color: rgb(9, 21, 33);
@@ -245,18 +259,18 @@ nav {
     width: auto;
     height: 300px;
   }
-  #projectTitle {
+  .projectTitle {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 10px;
   }
-  #projectLanguages {
+  .projectLanguages {
     text-align: center;
     font-weight: 300;
     font-size: 18px;
   }
-  #projectDescription {
+  .projectDescription {
     text-align: center;
     line-height: 1.5;
   }

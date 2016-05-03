@@ -13,16 +13,16 @@ gulp.task('jscompress', function() {
     .pipe(gulp.dest('scripts'));
 });
 
-gulp.task('csscompress', function () {
-  gulp.src('styles/*.css')
-    .pipe(cssmin())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('styles/min'));
-});
-
 gulp.task('autoprefixer', function () {
   gulp.src('styles/*.css')
     .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('styles'));
+});
+
+gulp.task('csscompress', function () {
+  gulp.src('styles/*.min.css')
+    .pipe(cssmin())
     .pipe(gulp.dest('styles'));
 });
 
